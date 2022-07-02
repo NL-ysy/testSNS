@@ -4,6 +4,7 @@ import com.avocado.moin.comment.domain.Comment;
 import com.avocado.moin.comment.dto.CommentAddDto;
 import com.avocado.moin.comment.dto.CommentUpdateDto;
 import com.avocado.moin.comment.repository.CommentRepository;
+import com.avocado.moin.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

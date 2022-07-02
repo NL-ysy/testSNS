@@ -1,6 +1,7 @@
 package com.avocado.moin.block.controller;
 
 import com.avocado.moin.block.domain.Block;
+import com.avocado.moin.block.dto.BlockAddDto;
 import com.avocado.moin.block.service.BlockService;
 import com.avocado.moin.post.domain.Post;
 import lombok.RequiredArgsConstructor;
@@ -16,8 +17,8 @@ public class BlockController {
     private final BlockService blockService;
 
     @PostMapping("/block")
-    public void saveBlock(@RequestBody Block block){
-        blockService.addBlock(block);
+    public void saveBlock(@RequestBody BlockAddDto blockAddDto){
+        blockService.addBlock(blockAddDto);
     }
 
     @GetMapping("/block")

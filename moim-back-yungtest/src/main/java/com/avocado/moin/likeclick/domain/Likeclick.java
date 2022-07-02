@@ -1,11 +1,9 @@
 package com.avocado.moin.likeclick.domain;
 
+import com.avocado.moin.post.domain.Post;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -15,6 +13,15 @@ public class Likeclick {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-    private Long postId;
+    @ManyToOne(cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "post_id")
+    private Post post;
     private Long userId;
+
+
+    @Builder
+    public Likeclick(Post post, Long userId) {
+        this.post = post;
+        this.userId = userId;
+    }
 }

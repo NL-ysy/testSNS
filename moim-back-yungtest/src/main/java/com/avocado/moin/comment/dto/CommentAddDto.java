@@ -1,6 +1,7 @@
 package com.avocado.moin.comment.dto;
 
 import com.avocado.moin.comment.domain.Comment;
+import com.avocado.moin.post.repository.PostRepository;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,9 +14,11 @@ public class CommentAddDto {
     private Long postId;
     private String content;
 
+    private PostRepository postRepository;
+
     public Comment toEntity(){
         return Comment.builder()
-                .postId(postId)
+                .post(postRepository.findById(postId).get())
                 .content(content)
                 .build();
     }

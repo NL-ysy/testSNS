@@ -1,6 +1,7 @@
 package com.avocado.moin.follow.service;
 
 import com.avocado.moin.follow.domain.Follow;
+import com.avocado.moin.follow.dto.FollowAddDto;
 import com.avocado.moin.follow.repository.FollowRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,9 +18,9 @@ public class FollowService {
     private final FollowRepository followRepository;
 
     @Transactional
-    public void addFollow(Follow follow){
+    public void addFollow(FollowAddDto followAddDto){
         log.info("add Follower");
-        try{followRepository.save(follow);
+        try{followRepository.save(followAddDto.toEntity()).getId();
         }catch (Exception e){
             log.error("error : {}", e.getMessage());
         }

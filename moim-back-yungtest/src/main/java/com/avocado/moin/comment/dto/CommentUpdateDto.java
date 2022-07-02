@@ -12,7 +12,6 @@ public class CommentUpdateDto {
     private Long id;
     private String content;
 
-
     @Builder
     public CommentUpdateDto(String content){
         this.content = content;

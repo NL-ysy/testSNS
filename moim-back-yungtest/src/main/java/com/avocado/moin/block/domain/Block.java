@@ -18,6 +18,13 @@ public class Block {
     private Long userId;
     private Long blockedid;
 
+    public void update(Long blockedid){
+        this.blockedid = blockedid;
+    }
 
+    @Builder
+    public Block(Long blockedid) {
+        this.blockedid = blockedid;
+    }
 }
 

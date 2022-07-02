@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b6c6fda-a364-4c0f-98e7-012df1408d01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/dto/BlockAddDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/dto/FollowAddDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/controller/LikeClickController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/dto/LikeClickDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/service/LikeClickService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/controller/TagListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/dto/TagListAddDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/dto/TagListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/service/TagListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/controller/BlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/controller/BlockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/domain/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/domain/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/service/BlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/block/service/BlockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/domain/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentAddDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentAddDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/domain/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/domain/Follow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/service/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/service/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/domain/Likeclick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/domain/Likeclick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/repository/LikeclickRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/repository/LikeclickRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/domain/TagList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/tagList/domain/TagList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/avocado/moin/controller/PostControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/avocado/moin/controller/PostControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BKzPqYthOKkBAg1NUIhDtwMbcl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ysoyu\OneDrive\문서\GitHub\testSNS\moim-back-yungtest\src\test\resources" />
+      <recent name="C:\Users\ysoyu\OneDrive\문서\GitHub\testSNS\moim-back-yungtest\src\test\java" />
+      <recent name="C:\Users\ysoyu\OneDrive\문서\GitHub\testSNS\moim-back-yungtest\src\test" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b6c6fda-a364-4c0f-98e7-012df1408d01" name="Changes" comment="" />
+      <created>1656669543571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656669543571</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

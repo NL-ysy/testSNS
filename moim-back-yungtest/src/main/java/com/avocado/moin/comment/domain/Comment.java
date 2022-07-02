@@ -1,23 +1,24 @@
 package com.avocado.moin.comment.domain;
 
 import com.avocado.moin.base.UtilTimeSetter;
+import com.avocado.moin.post.domain.Post;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Getter
 @NoArgsConstructor
 public class Comment extends UtilTimeSetter {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private Long userId;
-    private Long postId;
+    @ManyToOne(cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "post_id")
+    private Post post;
     private String content;
 
     public void update(String content){
@@ -25,9 +26,9 @@ public class Comment extends UtilTimeSetter {
     }
 
     @Builder
-    public Comment(Long userId, Long postId, String content) {
+    public Comment(Long userId, Post post, String content) {
         this.userId = userId;
-        this.postId = postId;
+        this.post = post;
         this.content = content;
     }
 }

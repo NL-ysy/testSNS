@@ -1,6 +1,7 @@
 package com.avocado.moin.block.service;
 
 import com.avocado.moin.block.domain.Block;
+import com.avocado.moin.block.dto.BlockAddDto;
 import com.avocado.moin.block.repository.BlockRepository;
 import com.avocado.moin.post.domain.Post;
 import lombok.RequiredArgsConstructor;
@@ -19,10 +20,10 @@ public class BlockService {
     private final BlockRepository blockRepository;
 
     @Transactional
-    public void addBlock(Block block){
+    public void addBlock(BlockAddDto blockAddDto){
         log.info("add Block");
         try{
-            blockRepository.save(block);
+            blockRepository.save(blockAddDto.toEntity()).getId();
         }catch (Exception e){
             log.error("error : {}", e.getMessage());
         }

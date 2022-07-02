@@ -18,6 +18,15 @@ public class Follow {
     private Long userId;
     private Long follower;
 
+    public void update(Long follower){
+        this.follower = follower;
+    }
+
+    @Builder
+    public Follow(Long follower) {
+        this.follower = follower;
+    }
+
     @Builder
     public Follow(Long userId, Long follower) {
         this.userId = userId;
