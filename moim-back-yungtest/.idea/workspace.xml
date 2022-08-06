@@ -5,83 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b6c6fda-a364-4c0f-98e7-012df1408d01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/base/CustomApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/controller/BlockListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/domain/BlockList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/dto/BlockListAddDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/dto/BlockListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/repository/BlockListRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/blockList/service/BlockListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/good/repository/GoodRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likes/domain/Likes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likes/repository/LikesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likes/service/LikesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/conroller/MediaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/Attachment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/BoardPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/UploadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/dto/MediaAddDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/repository/ArticleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/repository/FileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/util/MediaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/util/UploadFileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostPreviewDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/controller/BlockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/controller/BlockController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/domain/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/domain/Block.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/service/BlockService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/block/service/BlockService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/domain/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/domain/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/domain/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/domain/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentAddDto$CommentAddDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentAddDto$CommentAddDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentAddDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentAddDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentUpdateDto$CommentUpdateDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentUpdateDto$CommentUpdateDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentUpdateDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/dto/CommentUpdateDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/comment/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/controller/FollowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/controller/FollowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/domain/Follow$FollowBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/domain/Follow$FollowBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/domain/Follow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/domain/Follow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/service/FollowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/follow/service/FollowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/hashtag/domain/Hashtag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/hashtag/domain/Hashtag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/likeclick/domain/Likeclick.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/likeclick/repository/LikeclickRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/media/domain/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/media/domain/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/controller/PostController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/domain/Post$PostBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/domain/Post$PostBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/domain/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/dto/PostAddDto$PostAddDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/dto/PostAddDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/dto/PostResponseDto$PostResponseDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/dto/PostResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/post/service/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/avocado/moin/tagList/domain/TagList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentAddDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/comment/dto/CommentAddDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/follow/controller/FollowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/controller/LikeClickController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/good/controller/GoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/domain/Likeclick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/good/domain/Good.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/dto/LikeClickDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/good/dto/GoodDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/repository/LikeclickRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likeclick/service/LikeClickService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/good/service/GoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/domain/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/service/MediaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/media/service/MediaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostAddDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostAddDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostUpdateDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/avocado/moin/controller/PostControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/avocado/moin/controller/PostControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

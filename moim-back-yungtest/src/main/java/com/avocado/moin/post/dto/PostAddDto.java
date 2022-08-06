@@ -13,22 +13,25 @@ public class PostAddDto {
     private Long userId;
     private String title;
     private String content;
-    private String location;
+    private String location1;
+    private String location2;
 
     public Post toEntity(){
         return Post.builder()
                 .title(title)
                 .content(content)
-                .location(location)
+                .location1(location1)
+                .location2(location2)
                 .build();
     }
 
     @Builder
-    public PostAddDto(Long userId, String title, String content, String location) {
+    public PostAddDto(Long userId, String title, String content, String location1, String location2) {
         this.userId = userId;
         this.title = title;
         this.content = content;
-        this.location = location;
+        this.location1 = location1;
+        this.location2 = location2;
     }
 }
 

@@ -34,12 +34,14 @@ public class PostControllerTest {
         //given
         String title = "테스트 게시글 제목";
         String content = "테스트 게시글 본문";
-        String location = "테스트 게시글 위치정보";
+        String location1 = "테스트 게시글 위치정보 1";
+        String location2 = "테스트 게시글 위치정보 2";
 
         postRepository.save(Post.builder()
                 .title(title)
                 .content(content)
-                .location(location)
+                .location1(location1)
+                .location2(location2)
                 .build());
 
         //when
@@ -49,7 +51,8 @@ public class PostControllerTest {
         Post post = postList.get(0);
         assertThat(post.getTitle()).isEqualTo(title);
         assertThat(post.getContent()).isEqualTo(content);
-        assertThat(post.getLocation()).isEqualTo(location);
+        assertThat(post.getLocation1()).isEqualTo(location1);
+        assertThat(post.getLocation2()).isEqualTo(location2);
     }
 
     @Test
@@ -58,23 +61,28 @@ public class PostControllerTest {
 
         String title = "테스트 게시글 제목";
         String content = "테스트 게시글 본문";
-        String location = "테스트 게시글 위치정보";
+        String location1 = "테스트 게시글 위치정보1";
+        String location2 = "테스트 게시글 위치정보2";
 
         Post savePost = postRepository.save(Post.builder()
                 .title(title)
                 .content(content)
-                .location(location)
+                .location1(location1)
+                .location2(location2)
                 .build());
 
         Long id = savePost.getId(); //id 지정
         String expectedtitle = "테스트 게시글 수정 제목";
         String expectedcontent = "테스트 게시글 수정 본문";
-        String expectedlocation = "테스트 게시글 수정한 위치정보";
+        String expectedlocation1 = "테스트 게시글 수정한 위치정보 1";
+        String expectedlocation2 = "테스트 게시글 수정한 위치정보 2";
 
         PostUpdateDto updateDto = PostUpdateDto.builder()
                 .title(expectedtitle)
                 .content(expectedcontent)
-                .location(expectedlocation).build();
+                .location1(expectedlocation1)
+                .location2(expectedlocation2)
+                .build();
 
         String url = "http://localhost:8080/api/post/" + id;
         HttpEntity<PostUpdateDto> requestEntity = new HttpEntity<>(updateDto);
@@ -94,7 +102,8 @@ public class PostControllerTest {
         List<Post> all = postRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(expectedtitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedcontent);
-        assertThat(all.get(0).getLocation()).isEqualTo(expectedlocation);
+        assertThat(all.get(0).getLocation1()).isEqualTo(expectedlocation1);
+        assertThat(all.get(0).getLocation2()).isEqualTo(expectedlocation2);
     }
 
 //        Post post = postList.get(0);

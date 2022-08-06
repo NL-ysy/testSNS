@@ -53,15 +53,15 @@ public class PostService {
 //    }
 
     @Transactional
-    public void addPost(PostAddDto postAddDto, MultipartFile multipartFile) {
+    public void addPost(PostAddDto postAddDto) {
         log.info("add Post");
         try {
-            //파일업로드
-            UUID uuid = UUID.randomUUID();
-            String imgFileName = uuid + "_" + multipartFile.getOriginalFilename();
-            Path imageFilePath = Paths.get(uploadUrl + imgFileName);
+//            //파일업로드
+//            UUID uuid = UUID.randomUUID();
+//            String imgFileName = uuid + "_" + multipartFile.getOriginalFilename();
+//            Path imageFilePath = Paths.get(uploadUrl + imgFileName);
 
-            postRepository.save(postAddDto.toEntity(),imageFilePath).getId();
+            postRepository.save(postAddDto.toEntity()).getId();
 
         } catch (Exception e) {
             log.error("error : {}", e.getMessage());
@@ -72,7 +72,7 @@ public class PostService {
     public void editPost(Long id, PostUpdateDto postDto) {
         log.info("edit post {}.");
         Post post = postRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("error"));
-        post.update(postDto.getTitle(), postDto.getContent(), postDto.getLocation());
+        post.update(postDto.getTitle(), postDto.getContent(), postDto.getLocation1(), postDto.getLocation2());
     }
 
 

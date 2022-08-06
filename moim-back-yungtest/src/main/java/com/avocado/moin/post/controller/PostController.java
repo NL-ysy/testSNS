@@ -19,7 +19,7 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping("/post")
-    public void savePost(@RequestBody PostAddDto postAddDto, MultipartFile multipartFile) {
+    public void savePost(@RequestBody PostAddDto postAddDto) {
         postService.addPost(postAddDto);
     }
 
