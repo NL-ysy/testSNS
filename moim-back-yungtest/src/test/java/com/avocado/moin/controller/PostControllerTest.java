@@ -10,7 +10,9 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 
 import javax.persistence.Id;
 import java.util.List;
@@ -78,14 +80,26 @@ public class PostControllerTest {
         HttpEntity<PostUpdateDto> requestEntity = new HttpEntity<>(updateDto);
 
 
+
         //when
         List<Post> postList = postRepository.findAll();
-//        ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity, Long.class);
+
+        RestTemplate resttemplate = new RestTemplate(); //RestTemplate
+        ResponseEntity<Long> responseEntity = resttemplate.exchange(url, HttpMethod.PUT, requestEntity, Long.class);
 
         //then
-        Post post = postList.get(0);
-        assertThat(post.getTitle()).isEqualTo(title);
-        assertThat(post.getContent()).isEqualTo(content);
-        assertThat(post.getLocation()).isEqualTo(location);
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(responseEntity.getBody()).isGreaterThan(0L);
+
+        List<Post> all = postRepository.findAll();
+        assertThat(all.get(0).getTitle()).isEqualTo(expectedtitle);
+        assertThat(all.get(0).getContent()).isEqualTo(expectedcontent);
+        assertThat(all.get(0).getLocation()).isEqualTo(expectedlocation);
     }
+
+//        Post post = postList.get(0);
+//        assertThat(post.getTitle()).isEqualTo(title);
+//        assertThat(post.getContent()).isEqualTo(content);
+//        assertThat(post.getLocation()).isEqualTo(location);
+
 }

@@ -5,6 +5,7 @@ import com.avocado.moin.post.repository.PostRepository;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @NoArgsConstructor
 @Getter
@@ -14,6 +15,7 @@ public class CommentAddDto {
     private Long postId;
     private String content;
 
+    @Autowired
     private PostRepository postRepository;
 
     public Comment toEntity(){

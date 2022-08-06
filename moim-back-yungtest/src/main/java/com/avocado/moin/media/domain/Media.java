@@ -1,12 +1,10 @@
 package com.avocado.moin.media.domain;
 
+import com.avocado.moin.post.domain.Post;
 import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -19,11 +17,22 @@ public class Media {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-    private Long postId;
+    @ManyToOne(cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "post_id")
+    private Post post;
     private String media;
 
-    public String getUploadMedia() {
-        return media;
+    public void update(String media){
+        this.media = media;
     }
+
+    @Builder
+    public Media(Post post, String media) {
+        this.post = post;
+        this.media = media;
+    }
+    //    public String getUploadMedia() {
+//        return media;
+//    }
 
 }

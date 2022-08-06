@@ -7,6 +7,7 @@ import com.avocado.moin.post.domain.Post;
 import com.avocado.moin.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping("/post")
-    public void savePost(@RequestBody PostAddDto postAddDto) {
+    public void savePost(@RequestBody PostAddDto postAddDto, MultipartFile multipartFile) {
         postService.addPost(postAddDto);
     }
 

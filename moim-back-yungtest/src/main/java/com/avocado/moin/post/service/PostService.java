@@ -1,18 +1,24 @@
 package com.avocado.moin.post.service;
 
 
+import com.avocado.moin.likes.repository.LikesRepository;
 import com.avocado.moin.post.dto.PostAddDto;
 import com.avocado.moin.post.dto.PostResponseDto;
 import com.avocado.moin.post.dto.PostUpdateDto;
 import com.avocado.moin.post.domain.Post;
 import com.avocado.moin.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -20,12 +26,43 @@ import java.util.Optional;
 public class PostService {
 
     private final PostRepository postRepository;
+    private final LikesRepository likesRepository;
+
+
+    private String uploadUrl;
+
+//    @Transactional
+//    public void save(PostUploadDto postUploadDto, MultipartFile multipartFile, PrincipalDetails principalDetails) {
+//        UUID uuid = UUID.randomUUID();
+//        String imgFileName = uuid + "_" + multipartFile.getOriginalFilename();
+//
+//        Path imageFilePath = Paths.get(uploadUrl + imgFileName);
+//        try {
+//            Files.write(imageFilePath, multipartFile.getBytes());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        postRepository.save(Post.builder()
+//                .postImgUrl(imgFileName)
+//                .tag(postUploadDto.getTag())
+//                .text(postUploadDto.getText())
+//                .user(principalDetails.getUser())
+//                .likesCount(0)
+//                .build());
+//    }
 
     @Transactional
-    public void addPost(PostAddDto postAddDto) {
+    public void addPost(PostAddDto postAddDto, MultipartFile multipartFile) {
         log.info("add Post");
         try {
-            postRepository.save(postAddDto.toEntity()).getId();
+            //파일업로드
+            UUID uuid = UUID.randomUUID();
+            String imgFileName = uuid + "_" + multipartFile.getOriginalFilename();
+            Path imageFilePath = Paths.get(uploadUrl + imgFileName);
+
+            postRepository.save(postAddDto.toEntity(),imageFilePath).getId();
+
         } catch (Exception e) {
             log.error("error : {}", e.getMessage());
         }

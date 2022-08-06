@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -20,17 +21,21 @@ public class Post extends UtilTimeSetter {
     private Long userId;
     private String title;
     private String content;
-    private String location;
+    private LocalDateTime times;
+    private String location1;
+    private String location2;
 
-    public void update(String title, String content, String location){
+    public void update(String title, String content, String location1, String location2){
         this.title = title;
         this.content = content;
-        this.location = location;
+        this.location1 = location1;
+        this.location2 = location2;
     }
     @Builder
-    public Post(String title, String content, String location) {
+    public Post(String title, String content, String location1, String location2) {
         this.title = title;
         this.content = content;
-        this.location = location;
+        this.location1 = location1;
+        this.location2 = location2;
     }
 }
