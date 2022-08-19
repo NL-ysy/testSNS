@@ -20,7 +20,7 @@ public class HashtagController {
 
     private final HashtagService hashtagService;
 
-    @PostMapping("/hashtag")
+    @PostMapping("/hashtag/")
     public void savePost(@RequestBody HashtagAddDto hashtagAddDto) {
         hashtagService.addHashtag(hashtagAddDto);
     }

@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b6c6fda-a364-4c0f-98e7-012df1408d01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/controller/FollowListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/domain/FollowList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/dto/FollowListAddDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/dto/FollowListRepositoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/repository/FollowListRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/followList/service/FollowListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/likes/controller/LikesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/domain/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostAddDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostAddDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/dto/PostUpdateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/avocado/moin/post/service/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
