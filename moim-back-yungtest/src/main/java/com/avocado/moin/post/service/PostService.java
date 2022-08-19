@@ -72,7 +72,7 @@ public class PostService {
     public void editPost(Long id, PostUpdateDto postDto) {
         log.info("edit post {}.");
         Post post = postRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("error"));
-        post.update(postDto.getTitle(), postDto.getContent(), postDto.getLocation1(), postDto.getLocation2());
+        post.update(postDto.getTitle(), postDto.getContent(), postDto.getAddress1(), postDto.getAddress2());
     }
 
 

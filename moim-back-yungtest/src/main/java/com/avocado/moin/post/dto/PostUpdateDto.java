@@ -12,14 +12,14 @@ public class PostUpdateDto {
 
     private String title;
     private String content;
-    private String location1;
-    private String location2;
+    private String address1;
+    private String address2;
 
     @Builder
-    public PostUpdateDto(String title, String content, String location1, String location2) {
+    public PostUpdateDto(String title, String content, String address1, String address2) {
         this.title = title;
         this.content = content;
-        this.location1 = location1;
-        this.location2 = location2;
+        this.address1 = address1;
+        this.address2 = address2;
     }
 }

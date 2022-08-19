@@ -18,24 +18,27 @@ public class Post extends UtilTimeSetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+    private String url;
     private Long userId;
     private String title;
     private String content;
     private LocalDateTime times;
-    private String location1;
-    private String location2;
+    private String address1;
+    private String address2;
+    private int headcount;
+    private boolean accept;
 
-    public void update(String title, String content, String location1, String location2){
+    public void update(String title, String content, String address1, String address2){
         this.title = title;
         this.content = content;
-        this.location1 = location1;
-        this.location2 = location2;
+        this.address1 = address1;
+        this.address2 = address2;
     }
     @Builder
-    public Post(String title, String content, String location1, String location2) {
+    public Post(String title, String content, String address1, String address2) {
         this.title = title;
         this.content = content;
-        this.location1 = location1;
-        this.location2 = location2;
+        this.address1 = address1;
+        this.address2 = address2;
     }
 }
